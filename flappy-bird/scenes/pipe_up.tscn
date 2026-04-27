@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=3 uid="uid://dgi7jyu51mmlc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_akuxe"]
+size = Vector2(130, 142)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o01l3"]
+size = Vector2(125, 492)
+
+[node name="Pipe_up" type="Node2D"]
+
+[node name="top_pipe" type="AnimatableBody2D" parent="."]
+position = Vector2(66, 18)
+
+[node name="ColorRect2" type="ColorRect" parent="top_pipe"]
+offset_left = -64.0
+offset_top = -80.0
+offset_right = 64.0
+offset_bottom = 72.0
+color = Color(0, 0.415686, 1, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="top_pipe"]
+shape = SubResource("RectangleShape2D_akuxe")
+
+[node name="bottom_pipe" type="AnimatableBody2D" parent="."]
+position = Vector2(60, 493)
+
+[node name="ColorRect" type="ColorRect" parent="bottom_pipe"]
+offset_left = -60.0
+offset_top = -243.0
+offset_right = 66.0
+offset_bottom = 245.0
+color = Color(0, 0.415686, 1, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="bottom_pipe"]
+position = Vector2(4.5, 1)
+shape = SubResource("RectangleShape2D_o01l3")

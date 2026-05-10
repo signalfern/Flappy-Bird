@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://coqk5xojcevc1"]
+
+[ext_resource type="PackedScene" uid="uid://cab3jxejii1mh" path="res://scenes/birb.tscn" id="1_w7c3h"]
+[ext_resource type="PackedScene" uid="uid://cacl3r0h4g1xn" path="res://scenes/pipe_pair.tscn" id="2_w7c3h"]
+
+[node name="level" type="Node2D"]
+
+[node name="Birb" parent="." instance=ExtResource("1_w7c3h")]
+position = Vector2(397, 269)
+
+[node name="pipe_pair" parent="." instance=ExtResource("2_w7c3h")]
+position = Vector2(1152, 109)

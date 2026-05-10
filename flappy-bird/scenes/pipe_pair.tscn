@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=3 uid="uid://cacl3r0h4g1xn"]
+
+[ext_resource type="Script" uid="uid://by2she2ma337u" path="res://scripts/pipe_pair.gd" id="1_t8jum"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t8jum"]
+size = Vector2(107, 510)
+
+[node name="pipe_pair" type="Node2D"]
+script = ExtResource("1_t8jum")
+Speed = 400.0
+metadata/_edit_group_ = true
+
+[node name="pipe_top" type="Area2D" parent="."]
+position = Vector2(0, -352)
+
+[node name="ColorRect" type="ColorRect" parent="pipe_top"]
+offset_right = 126.0
+offset_bottom = 523.0
+color = Color(0.113725, 0.231373, 1, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="pipe_top"]
+position = Vector2(63.5, 262)
+shape = SubResource("RectangleShape2D_t8jum")
+
+[node name="pipe_down" type="Area2D" parent="."]
+position = Vector2(0, 300)
+
+[node name="ColorRect" type="ColorRect" parent="pipe_down"]
+offset_right = 126.0
+offset_bottom = 523.0
+color = Color(0.113725, 0.231373, 1, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="pipe_down"]
+position = Vector2(63.5, 265.5)
+shape = SubResource("RectangleShape2D_t8jum")

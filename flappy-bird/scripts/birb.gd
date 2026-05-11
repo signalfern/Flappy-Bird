@@ -13,3 +13,6 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_just_released("jump") :
 		velocity.y = JUMP_VELOCITY
 	move_and_slide()
+
+func is_hit():
+	pass 

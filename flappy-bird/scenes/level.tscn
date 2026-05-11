@@ -1,9 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://coqk5xojcevc1"]
+[gd_scene load_steps=4 format=3 uid="uid://coqk5xojcevc1"]
 
 [ext_resource type="PackedScene" uid="uid://cab3jxejii1mh" path="res://scenes/birb.tscn" id="1_w7c3h"]
+[ext_resource type="Script" uid="uid://dy40the72ywso" path="res://scripts/level.gd" id="1_w8frs"]
 [ext_resource type="PackedScene" uid="uid://cacl3r0h4g1xn" path="res://scenes/pipe_pair.tscn" id="2_w7c3h"]
 
 [node name="level" type="Node2D"]
+script = ExtResource("1_w8frs")
 
 [node name="Birb" parent="." instance=ExtResource("1_w7c3h")]
 position = Vector2(397, 269)

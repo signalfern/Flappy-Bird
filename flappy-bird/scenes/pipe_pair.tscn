@@ -23,12 +23,13 @@ position = Vector2(63.5, 262)
 shape = SubResource("RectangleShape2D_t8jum")
 
 [node name="pipe_down" type="Area2D" parent="."]
-position = Vector2(0, 300)
+position = Vector2(0, 355)
 
 [node name="ColorRect" type="ColorRect" parent="pipe_down"]
 offset_right = 126.0
 offset_bottom = 523.0
 color = Color(0.113725, 0.231373, 1, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="pipe_down"]
 position = Vector2(63.5, 265.5)
